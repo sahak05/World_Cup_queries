@@ -37,6 +37,8 @@ create table Collaborateur(
 	prenom_C text not null,
 	nom_C text not null,
 	expertise text not null,
+	constraint sur_expertise check (expertise in ('Assistant Entraineur',
+		'Medecin', 'Psychologue', 'Physiotherapeute')),
 	date_de_naissance_C date not null,
 	anciennete_collab date not null,
 	primary key (collaborateur_id)
