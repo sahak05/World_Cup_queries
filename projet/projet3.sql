@@ -13,12 +13,6 @@ create table Coupe_du_monde(
 	primary key (edition)
 );
 
-create table Participants(
-	pays text not null,
-	edition int not null,
-	primary key (pays, edition),
-	foreign key (edition) references Coupe_du_monde(edition)
-);
 
 create table Entraineur(
 	entraineur_id serial not null,
@@ -84,7 +78,7 @@ create table Match(
 	rang text not null,
 	score_eq1 int not null,
 	score_eq2 int not null,
-	constraint sur_rang check (rang in ('Round de groupe', 'Round de 8', 'Quart de finale'
+	constraint sur_rang check (rang in ('Round de 8', 'Quart de finale'
 		'Demi-finale', '3e place', 'Finale')),
 	constraint sur_score check (score_eq2 >=0 and score_eq1>=0),
 	primary key (dateM, nation1, nation2, edition, nom_stade),
