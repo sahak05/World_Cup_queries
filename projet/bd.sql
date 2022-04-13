@@ -761,3 +761,43 @@ insert into Sanction values (20, 221, '2014-07-13', 1, 'Jaune'),
 	(28, 202, '2014-07-13', 11, 'Rouge');
 
 
+--Collaborateur
+
+insert into Collaborateur values
+	(1, 'Maguy', 'Camara', 'Assistant entraineur', '1980-06-22', '2000-01-01'),
+	(2, 'Christoph', 'Camer', 'Physiotherapeute', '1977-04-22', '1989-01-01'),
+	(3, 'Alain', 'Simon', 'Medecin', '1978-06-22', '2000-01-01'),
+	(4, 'Phillipe', 'Jaulin', 'Assistant entraineur', '1980-06-22', '2000-01-01'),
+	(5, 'Guillaume', 'Paris', 'Physiotherapeute', '1980-06-22', '2000-01-01'),
+	(6, 'Katy', 'Perlemuter', 'Medecin', '1980-06-22', '2000-01-01'),
+	(7, 'Mathieu', 'Meyer', 'Assistant entraineur', '1980-06-22', '2000-01-01'),
+	(8, 'Amir', 'Zafouli', 'Psychologue', '1980-06-22', '2000-01-01'),
+	(9, 'Gilles', 'Cohen', 'Physiotherapeute', '1980-06-22', '2000-01-01'),
+	(10, 'Abdoul', 'Abdoul', 'Psychologue', '1980-06-22', '2000-01-01'),
+	(11, 'Jeanne', 'Audrey', 'Medecin', '1980-06-22', '2000-01-01'),
+	(12, 'Al', 'Wahid', 'Assistant entraineur', '1980-06-22', '2000-01-01'),
+	(13, 'Guy', 'Concordia', 'Medecin', '1980-06-22', '2000-01-01'),
+	(14, 'Liam', 'Paul', 'Assistant entraineur', '1980-06-22', '2000-01-01'),
+	(15, 'Honore', 'Beaugrand', 'Assistant entraineur', '1980-06-22', '2000-01-01'),
+	(16, 'Marguerite', 'Samba', 'Medecin', '1980-06-22', '2000-01-01');
+
+	--Collabore
+
+insert into Collabore values 
+	('Bresil', 2014,1),
+	('Mexique', 2014, 2), 
+	('Pays-Bas', 2014, 3), 
+	('Chili', 2014, 4),
+	('Chili', 2014, 5), 
+	('Colombie', 2014, 17),
+	('Grece', 2014, 6),
+	('Uruguay', 2014, 7), 
+	('Costa Rica', 2014, 8),
+	('Suisse', 2014, 9), 
+	('France', 2014, 10), 
+	('Argentine', 2014, 11), 
+	('Nigeria', 2014, 12), 
+	('Allemagne', 2014, 13), 
+	('Etats-Unis', 2014, 14),
+	('Belgique', 2014, 15),
+	('Algerie', 2014, 16);
