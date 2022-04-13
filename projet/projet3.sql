@@ -25,6 +25,7 @@ create table Entraineur(
 
 create table Equipe(
 	nation text not null,
+	UNIQUE (nation),
 	edition int not null,
 	entraineur_id int not null,
 	primary key (nation, edition),
@@ -37,7 +38,7 @@ create table Collaborateur(
 	prenom_C text not null,
 	nom_C text not null,
 	expertise text not null,
-	constraint sur_expertise check (expertise in ('Assistant Entraineur',
+	constraint sur_expertise check (expertise in ('Assistant entraineur',
 		'Medecin', 'Psychologue', 'Physiotherapeute')),
 	date_de_naissance_C date not null,
 	anciennete_collab date not null,
@@ -65,6 +66,7 @@ create table Joueur(
 
 create table Stade(
 	nom_stade text not null,
+	UNIQUE (nom_stade),
 	ville text not null,
 	capacite int not null,
 	constraint sur_capacite check (capacite >=1),
@@ -80,14 +82,15 @@ create table Match(
 	rang text not null,
 	score_eq1 int not null,
 	score_eq2 int not null,
-	constraint sur_rang check (rang in ('Round de 8', 'Quart de finale'
+	constraint sur_rang check (rang in ('Round de 8', 'Quart de finale',
 		'Demi-finale', '3e place', 'Finale')),
 	constraint sur_score check (score_eq2 >=0 and score_eq1>=0),
+	UNIQUE (dateM),
 	primary key (dateM, nation1, nation2, edition, nom_stade),
 	foreign key (nom_stade) references Stade(nom_stade),
 	foreign key (edition) references Coupe_du_monde(edition),
-	foreign key (nation1, edition) references Equipe(nation, edition),
-	foreign key (nation2, edition) references Equipe(nation, edition)
+	foreign key (nation1) references Equipe(nation),
+	foreign key (nation2) references Equipe(nation)
 );
 
 create table Appartient(
@@ -889,7 +892,7 @@ insert into Gerer_par values ('2014-07-09', 1, 'Principal'),
 	('2014-07-09', 5, 'Assistant');
 
 
-insert into Match values ('2014-07-10', 'Bresil', 'Allemagne', 2014, 'Estadio Mineirao', 'Demi-finale', 1, 7);
+insert into Match values ('2014-07-10', 'Bresil', 'Allemagne', 2014, 'Mineirao', 'Demi-finale', 1, 7);
 insert into Gerer_par values ('2014-07-10', 1, 'Principal'),
 	('2014-07-10', 5, 'Assistant'), 
 	('2014-07-10', 6, 'Assistant'),
@@ -897,7 +900,7 @@ insert into Gerer_par values ('2014-07-10', 1, 'Principal'),
 
 
 
-insert into Match values ('2014-07-11', 'Pays-Bas', 'Argentine', 2014, 'Arena Baixada', 'Demi-finale', 0, 0);
+insert into Match values ('2014-07-11', 'Pays-Bas', 'Argentine', 2014, 'Arena da Baixada', 'Demi-finale', 0, 0);
 insert into Gerer_par values ('2014-07-11', 2, 'Principal'),
 	('2014-07-11', 8, 'Assistant'), 
 	('2014-07-11', 9, 'Assistant'),
