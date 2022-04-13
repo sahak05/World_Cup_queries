@@ -7,9 +7,9 @@ set search_path to Projet3;
 
 create table Coupe_du_monde(
 	edition int not null,
-	unique (edition),
+
 	pays_org text not null,
-	constraint sur_edition (edition >= 1), 
+	constraint sur_edition check (edition >= 1), 
 	primary key (edition)
 );
 
@@ -50,7 +50,7 @@ create table Collabore(
 	collaborateur_id int not null,
 	primary key (nation, edition, collaborateur_id),
 	foreign key (nation, edition) references Equipe(nation, edition),
-	foreign key collaborateur_id references Collaborateur(collaborateur_id) 
+	foreign key (collaborateur_id) references Collaborateur(collaborateur_id) 
 );
 
 create table Joueur(
@@ -84,8 +84,8 @@ create table Match(
 		'Demi-finale', '3e place', 'Finale')),
 	constraint sur_score check (score_eq2 >=0 and score_eq1>=0),
 	primary key (dateM, nation1, nation2, edition, nom_stade),
-	foreign key nom_stade references Stade(nom_stade),
-	foreign key edition references Coupe_du_monde(edition),
+	foreign key (nom_stade) references Stade(nom_stade),
+	foreign key (edition) references Coupe_du_monde(edition),
 	foreign key (nation1, edition) references Equipe(nation, edition),
 	foreign key (nation2, edition) references Equipe(nation, edition)
 );
@@ -101,7 +101,7 @@ create table Appartient(
 	constraint sur_numero check (numero >=1),
 	primary key (joueur_id, nation, edition),
 	foreign key (nation, edition) references Equipe(nation, edition),
-	foreign key joueur_id references Joueur(joueur_id)
+	foreign key (joueur_id) references Joueur(joueur_id)
 );
 
 create table Arbitre(
@@ -119,8 +119,8 @@ create table Gerer_par(
 	type text not null,
 	constraint sur_type check (type in ('Principal', 'Assistant')),
 	primary key (dateM, arbitre_id, type),
-	foreign key dateM references Match(dateM),
-	foreign key arbitre_id references Arbitre(arbitre_id)
+	foreign key (dateM) references Match(dateM),
+	foreign key (arbitre_id) references Arbitre(arbitre_id)
 );
 
 create table Sanction(
@@ -131,9 +131,9 @@ create table Sanction(
 	couleur text not null,
 	constraint sur_couleur check (couleur in ('Jaune', 'Rouge')),
 	primary key (sanction_id),
-	foreign key joueur_id references Joueur(joueur_id),
-	foreign key dateM references Match(dateM),
-	foreign key arbitre_id references Arbitre(arbitre_id)
+	foreign key (joueur_id) references Joueur(joueur_id),
+	foreign key (dateM) references Match(dateM),
+	foreign key (arbitre_id) references Arbitre(arbitre_id)
 );
 
 
@@ -173,7 +173,7 @@ create table Sanction(
 
 
 --Here to insert coupe du monde 
-insert into Coupe_du_monde values (2014, 'Bresil')
+insert into Coupe_du_monde values (2014, 'Bresil');
 
 
 --Entraineur
@@ -726,7 +726,7 @@ insert into Appartient values (241, 'Belgique', 2014, 'Attaquant', 17);
 --Algerie
 
 
-insert into Joueur values (242, 'Rais', 'M\'Bolhi', '1988-08-31', '1990-05-05');
+insert into Joueur values (242, 'Rais', 'MBolhi', '1988-08-31', '1990-05-05');
 insert into Appartient values (242, 'Algerie', 2014, 'Gardien', 23);
 
 insert into Joueur values (243, 'Madjid', 'Bougherra', '1985-12-14', '2003-12-12');
@@ -793,7 +793,7 @@ insert into Gerer_par values ('2014-06-28', 1, 'Principal'),
 	('2014-06-28', 6, 'Assistant'),
 	('2014-06-28', 7, 'Assistant');
 insert into Sanction values (1, 110, '2014-06-28', 1, 'Jaune'),
-	(2, 101, '2014-06-28', 1, 'Jaune')
+	(2, 101, '2014-06-28', 1, 'Jaune'),
 	(3, 142, '2014-06-28', 5, 'Jaune');
 
 
@@ -803,7 +803,7 @@ insert into Gerer_par values ('2014-06-29', 2, 'Principal'),
 	('2014-06-29', 9, 'Assistant'),
 	('2014-06-29', 10, 'Assistant');
 insert into Sanction values (4, 152, '2014-06-29', 2, 'Rouge'),
-	(5, 153, '2014-06-29', 2, 'Jaune')
+	(5, 153, '2014-06-29', 2, 'Jaune'),
 	(6, 154, '2014-06-29', 2, 'Jaune');
 
 
@@ -813,7 +813,7 @@ insert into Gerer_par values ('2014-06-30', 3, 'Principal'),
 	('2014-06-30', 12, 'Assistant'),
 	('2014-06-30', 13, 'Assistant');
 insert into Sanction values (7, 125, '2014-06-28', 3, 'Jaune'),
-	(8, 125, '2014-06-30', 3, 'Jaune')
+	(8, 125, '2014-06-30', 3, 'Jaune'),
 	(9, 125, '2014-06-30', 3, 'Rouge');
 
 
@@ -939,7 +939,7 @@ insert into Collaborateur values
 	(13, 'Guy', 'Concordia', 'Medecin', '1980-06-22', '2000-01-01'),
 	(14, 'Liam', 'Paul', 'Assistant entraineur', '1980-06-22', '2000-01-01'),
 	(15, 'Honore', 'Beaugrand', 'Assistant entraineur', '1980-06-22', '2000-01-01'),
-	(16, 'Marguerite', 'Samba', 'Medecin', '1980-06-22', '2000-01-01');
+	(16, 'Marguerite', 'Samba', 'Medecin', '1980-06-22', '2000-01-01'),
 	(17, 'Charles', 'Samba', 'Psychologue', '1980-06-22', '2000-01-01');
 
 	--Collabore
