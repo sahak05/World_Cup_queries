@@ -246,22 +246,518 @@ insert into Appartient values (154, 'Colombie', 2014, 'Attaquant', 17);
 
 --Grece
 
+
+insert into Joueur values (155, 'Orestis', 'Karnezis', '1985-07-11', '1990-05-05');
+insert into Appartient values (155, 'Grece', 2014, 'Gardien', 1);
+
+insert into Joueur values (156, 'Yioryos', 'Tzavellas', '1991-12-14', '2003-12-12');
+insert into Appartient values (156, 'Grece', 2014, 'Defenseur', 3);
+
+insert into Joueur values (157, 'Kostas', 'Manolas', '1991-02-11', '2000-02-10');
+insert into Appartient values (157, 'Grece', 2014, 'Defenseur', 4);
+
+insert into Joueur values (158, 'Vangelis', 'Moras', '1981-11-02', '1999-07-10');
+insert into Appartient values (158, 'Grece', 2014, 'Defenseur', 5);
+
+insert into Joueur values (159, 'Loukas', 'Vyntra', '1981-01-13', '2001-05-05');
+insert into Appartient values (159, 'Grece', 2014, 'Defenseur', 11);
+
+insert into Joueur values (160, 'Iosif', 'Cholevas', '1984-02-28', '2010-10-28');
+insert into Appartient values (160, 'Grece', 2014, 'Defenseur', 20);
+
+insert into Joueur values (161, 'Andreas', 'Samaris', '1995-05-22', '2005-01-10');
+insert into Appartient values (161, 'Grece', 2014, 'Lateral', 23);
+
+insert into Joueur values (162, 'Yeoryos', 'Samaras', '1985-05-17', '2005-03-26');
+insert into Appartient values (162, 'Grece', 2014, 'Attaquant', 7);
+
+insert into Joueur values (163, 'Kostas', 'Mitroglou', '1988-01-22', '2006-09-09');
+insert into Appartient values (163, 'Grece', 2014, 'Attaquant', 9);
+
+insert into Joueur values (164, 'Dimitris', 'Salpingidis', '1981-09-18', '2005-02-10');
+insert into Appartient values (164, 'Grece', 2014, 'Attaquant', 14);
+
+insert into Joueur values (165, 'Theofanis', 'Gekas', '1980-09-18', '2002-05-05');
+insert into Appartient values (165, 'Grece', 2014, 'Attaquant', 17);
+
+
+
+
+
 --Uruguay
+
+
+
+insert into Joueur values (166, 'Fernando', 'Muslera', '1986-08-31', '1990-05-05');
+insert into Appartient values (166, 'Uruguay', 2014, 'Gardien', 1);
+
+insert into Joueur values (167, 'Rodrigo', 'Munoz', '1982-12-14', '2003-12-12');
+insert into Appartient values (167, 'Uruguay', 2014, 'Gardien', 12);
+
+insert into Joueur values (168, 'Martin', 'Silva', '1983-02-11', '2000-02-10');
+insert into Appartient values (168, 'Uruguay', 2014, 'Gardien', 23);
+
+insert into Joueur values (169, 'Diego', 'Lugano', '1980-11-02', '1999-07-10');
+insert into Appartient values (169, 'Uruguay', 2014, 'Defenseur', 2);
+
+insert into Joueur values (170, 'Diego', 'Godin', '1986-01-13', '2001-05-05');
+insert into Appartient values (170, 'Uruguay', 2014, 'Defenseur', 3);
+
+insert into Joueur values (171, 'Jorge', 'Fucile', '1994-02-28', '2010-10-28');
+insert into Appartient values (171, 'Uruguay', 2014, 'Defenseur', 4);
+
+insert into Joueur values (172, 'Jose', 'Gimenez', '1995-05-22', '2005-01-10');
+insert into Appartient values (172, 'Uruguay', 2014, 'Defenseur', 13);
+
+insert into Joueur values (173, 'Maxime', 'Pereira', '1984-05-17', '2005-03-26');
+insert into Appartient values (173, 'Uruguay', 2014, 'Defenseur', 16);
+
+insert into Joueur values (174, 'Sebastien', 'Costas', '1990-01-22', '2006-09-09');
+insert into Appartient values (174, 'Uruguay', 2014, 'Defenseur', 19);
+
+insert into Joueur values (175, 'Martin', 'Caceres', '1987-09-18', '2005-02-10');
+insert into Appartient values (175, 'Uruguay', 2014, 'Defenseur', 22);
+
+insert into Joueur values (176, 'Walter', 'Gargano', '1984-09-18', '2002-05-05');
+insert into Appartient values (176, 'Uruguay', 2014, 'Milieu defensif', 5);
+
+
+
 
 --Costa Rica 
 
+insert into Joueur values (177, 'Keylor', 'Navas', '1986-08-31', '1990-05-05');
+insert into Appartient values (177, 'Costa Rica', 2014, 'Gardien', 1);
+
+insert into Joueur values (178, 'Michael', 'Umana', '1982-12-14', '2003-12-12');
+insert into Appartient values (178, 'Costa Rica', 2014, 'Defenseur', 4);
+
+insert into Joueur values (179, 'Junior', 'Diaz', '1983-02-11', '2000-02-10');
+insert into Appartient values (179, 'Costa Rica', 2014, 'Defenseur', 15);
+
+insert into Joueur values (180, 'Roy', 'Miller', '1986-11-02', '1999-07-10');
+insert into Appartient values (180, 'Costa Rica', 2014, 'Defenseur', 19);
+
+insert into Joueur values (181, 'Dave', 'Myrie', '1992-01-13', '2001-05-05');
+insert into Appartient values (181, 'Costa Rica', 2014, 'Defenseur', 8);
+
+insert into Joueur values (182, 'Celso', 'Borges', '1993-02-28', '2010-10-28');
+insert into Appartient values (182, 'Costa Rica', 2014, 'Lateral', 5);
+
+insert into Joueur values (183, 'Christian', 'Bolanos', '1985-05-22', '2005-01-10');
+insert into Appartient values (183, 'Costa Rica', 2014, 'Lateral', 11);
+
+insert into Joueur values (184, 'Yeltsin', 'Tejeda', '1985-05-17', '2005-03-26');
+insert into Appartient values (184, 'Costa Rica', 2014, 'Milieu offensif', 17);
+
+insert into Joueur values (185, 'Bryan', 'Ruiz', '1986-01-22', '2006-09-09');
+insert into Appartient values (185, 'Costa Rica', 2014, 'Attaquant', 10);
+
+insert into Joueur values (186, 'Randall', 'Brenes', '1986-09-18', '2005-02-10');
+insert into Appartient values (186, 'Costa Rica', 2014, 'Attaquant', 14);
+
+insert into Joueur values (187, 'Joel', 'Campbell', '1986-09-18', '2002-05-05');
+insert into Appartient values (187, 'Costa Rica', 2014, 'Attaquant', 9);
+
+
+
+
+
 --Suisse
+
+
+insert into Joueur values (188, 'Diego', 'Benaglio', '1988-08-31', '1990-05-05');
+insert into Appartient values (188, 'Suisse', 2014, 'Gardien', 1);
+
+insert into Joueur values (189, 'Yann', 'Sommier', '1990-12-14', '2003-12-12');
+insert into Appartient values (189, 'Suisse', 2014, 'Defenseur', 2);
+
+insert into Joueur values (190, 'Reto', 'Ziegler', '1986-02-11', '2000-02-10');
+insert into Appartient values (190, 'Suisse', 2014, 'Defenseur', 3);
+
+insert into Joueur values (191, 'Philipe', 'Senderos', '1986-11-02', '1999-07-10');
+insert into Appartient values (191, 'Suisse', 2014, 'Defenseur', 4);
+
+insert into Joueur values (192, 'Haris', 'Seferovic', '1986-09-18', '2005-02-10');
+insert into Appartient values (192, 'Suisse', 2014, 'Attaquant', 9);
+
+insert into Joueur values (193, 'Mario', 'Gavranovic', '1986-09-18', '2002-05-05');
+insert into Appartient values (193, 'Suisse', 2014, 'Attaquant', 17);
+
+
+
 
 --France
 
+insert into Joueur values (194, 'Hugo', 'Loris', '1988-08-31', '1990-05-05');
+insert into Appartient values (194, 'France', 2014, 'Gardien', 1);
+
+insert into Joueur values (195, 'Patrice', 'Evra', '1985-12-14', '2003-12-12');
+insert into Appartient values (195, 'France', 2014, 'Defenseur', 3);
+
+insert into Joueur values (196, 'Raphael', 'Varane', '1986-02-11', '2000-02-10');
+insert into Appartient values (196, 'France', 2014, 'Defenseur', 4);
+
+insert into Joueur values (197, 'Blaise', 'Matuidi', '1993-02-28', '2010-10-28');
+insert into Appartient values (197, 'France', 2014, 'Milieu offensif', 14);
+
+insert into Joueur values (198, 'Antoine', 'Griezmann', '1985-05-22', '2005-01-10');
+insert into Appartient values (198, 'France', 2014, 'Milieu offensif', 11);
+
+insert into Joueur values (199, 'Remy', 'Cabella', '1985-05-17', '2005-03-26');
+insert into Appartient values (199, 'France', 2014, 'Attaquant', 7);
+
+insert into Joueur values (200, 'Olivier', 'Giroud', '1986-01-22', '2006-09-09');
+insert into Appartient values (200, 'France', 2014, 'Attaquant', 9);
+
+insert into Joueur values (201, 'Karim', 'Benzema', '1986-09-18', '2005-02-10');
+insert into Appartient values (201, 'France', 2014, 'Attaquant', 10);
+
+
+
+
+
 --Argentine
+
+
+insert into Joueur values (202, 'Sergio', 'Romero', '1988-08-31', '1990-05-05');
+insert into Appartient values (202, 'Argentine', 2014, 'Gardien', 1);
+
+insert into Joueur values (203, 'Marcos', 'Rojo', '1985-12-14', '2003-12-12');
+insert into Appartient values (203, 'Argentine', 2014, 'Defenseur', 16);
+
+insert into Joueur values (204, 'Pablo', 'Zabaleta', '1986-02-11', '2000-02-10');
+insert into Appartient values (204, 'Argentine', 2014, 'Defenseur', 4);
+
+insert into Joueur values (205, 'Enzo', 'Perez', '1993-02-28', '2010-10-28');
+insert into Appartient values (205, 'Argentine', 2014, 'Milieu offensif', 8);
+
+insert into Joueur values (206, 'Maxi', 'Rodriguez', '1985-05-22', '2005-01-10');
+insert into Appartient values (206, 'Argentine', 2014, 'Milieu offensif', 11);
+
+insert into Joueur values (207, 'Fernando', 'Gago', '1985-05-17', '2005-03-26');
+insert into Appartient values (207, 'Argentine', 2014, 'Attaquant', 5);
+
+insert into Joueur values (208, 'Lionel', 'Messi', '1995-06-24', '2001-09-09');
+insert into Appartient values (208, 'Argentine', 2014, 'Attaquant', 10);
+
+insert into Joueur values (209, 'Sergio', 'Aguero', '1986-09-18', '2005-02-10');
+insert into Appartient values (209, 'Argentine', 2014, 'Attaquant', 20);
+
+
+
 
 --Nigeria
 
+
+insert into Joueur values (210, 'Vincent', 'Enyeama', '1988-08-31', '1990-05-05');
+insert into Appartient values (210, 'Nigeria', 2014, 'Gardien', 1);
+
+insert into Joueur values (211, 'Joseph', 'Yobo', '1985-12-14', '2003-12-12');
+insert into Appartient values (211, 'Nigeria', 2014, 'Defenseur', 2);
+
+insert into Joueur values (212, 'Efe', 'Ambrose', '1986-02-11', '2000-02-10');
+insert into Appartient values (212, 'Nigeria', 2014, 'Defenseur', 3);
+
+insert into Joueur values (213, 'John', 'Obi Mikel', '1993-02-28', '2010-10-28');
+insert into Appartient values (213, 'Nigeria', 2014, 'Milieu offensif', 10);
+
+insert into Joueur values (214, 'Ahmed', 'Musa', '1985-05-22', '2005-01-10');
+insert into Appartient values (214, 'Nigeria', 2014, 'Milieu defensif', 7);
+
+insert into Joueur values (215, 'Peter', 'Odemwingie', '1985-05-17', '2005-03-26');
+insert into Appartient values (215, 'Nigeria', 2014, 'Attaquant', 8);
+
+insert into Joueur values (216, 'Emmanuel', 'Emenike', '1986-01-22', '2006-09-09');
+insert into Appartient values (216, 'Nigeria', 2014, 'Attaquant', 9);
+
+insert into Joueur values (217, 'Shola', 'Ameobi', '1986-09-18', '2005-02-10');
+insert into Appartient values (217, 'Nigeria', 2014, 'Attaquant', 23);
+
+
+
 --Allemagne
+
+
+insert into Joueur values (218, 'Manuel', 'Neuer', '1988-08-31', '1990-05-05');
+insert into Appartient values (218, 'Allemagne', 2014, 'Gardien', 1);
+
+insert into Joueur values (219, 'Eric', 'Durm', '1985-12-14', '2003-12-12');
+insert into Appartient values (219, 'Allemagne', 2014, 'Defenseur', 3);
+
+insert into Joueur values (220, 'Philipp', 'Lahm', '1986-02-11', '2000-02-10');
+insert into Appartient values (220, 'Allemagne', 2014, 'Defenseur', 4);
+
+insert into Joueur values (221, 'Thomas', 'Muller', '1993-02-28', '2010-10-28');
+insert into Appartient values (221, 'Allemagne', 2014, 'Milieu offensif', 14);
+
+insert into Joueur values (222, 'Julian', 'Draxler', '1985-05-22', '2005-01-10');
+insert into Appartient values (222, 'Allemagne', 2014, 'Milieu offensif', 11);
+
+insert into Joueur values (223, 'Toni', 'Kroos', '1985-05-17', '2005-03-26');
+insert into Appartient values (223, 'Allemagne', 2014, 'Lateral', 7);
+
+insert into Joueur values (224, 'Mesut', 'Ozil', '1986-01-22', '2006-09-09');
+insert into Appartient values (224, 'Allemagne', 2014, 'Milieu defensif', 9);
+
+insert into Joueur values (225, 'Miroslav', 'Klose', '1986-09-18', '2005-02-10');
+insert into Appartient values (225, 'Allemagne', 2014, 'Attaquant', 11);
+
+
 
 --Etats-Unis
 
+
+insert into Joueur values (226, 'Tim', 'Howard', '1979-08-31', '1990-05-05');
+insert into Appartient values (226, 'Etats-Unis', 2014, 'Gardien', 1);
+
+insert into Joueur values (227, 'DaMarcus', 'Beasley', '1982-12-14', '2003-12-12');
+insert into Appartient values (227, 'Etats-Unis', 2014, 'Defenseur', 7);
+
+insert into Joueur values (228, 'Matt', 'Besler', '1986-02-11', '2000-02-10');
+insert into Appartient values (228, 'Etats-Unis', 2014, 'Defenseur', 5);
+
+insert into Joueur values (229, 'Michael', 'Bradley', '1987-02-28', '2010-10-28');
+insert into Appartient values (229, 'Etats-Unis', 2014, 'Milieu offensif', 4);
+
+insert into Joueur values (230, 'Jermaine', 'Jones', '1981-05-22', '2005-01-10');
+insert into Appartient values (230, 'Etats-Unis', 2014, 'Milieu offensif', 13);
+
+insert into Joueur values (231, 'Brad', 'Davis', '1981-05-17', '2005-03-26');
+insert into Appartient values (231, 'Etats-Unis', 2014, 'Lateral', 14);
+
+insert into Joueur values (232, 'Julian', 'Green', '1995-01-22', '2006-09-09');
+insert into Appartient values (232, 'Etats-Unis', 2014, 'Lateral', 16);
+
+insert into Joueur values (233, 'Clint', 'Dempsey', '1986-09-18', '2005-02-10');
+insert into Appartient values (233, 'Etats-Unis', 2014, 'Attaquant', 10);
+
+
+
 --Belgique
 
+insert into Joueur values (234, 'Thibaut', 'Courtois', '1992-08-31', '1990-05-05');
+insert into Appartient values (234, 'Belgique', 2014, 'Gardien', 1);
+
+insert into Joueur values (235, 'Vincent', 'Kompany', '1986-12-14', '2003-12-12');
+insert into Appartient values (235, 'Belgique', 2014, 'Defenseur', 4);
+
+insert into Joueur values (236, 'Jan', 'Vertonghen', '1987-02-11', '2000-02-10');
+insert into Appartient values (236, 'Belgique', 2014, 'Defenseur', 5);
+
+insert into Joueur values (237, 'Moussa', 'Dembele', '1987-02-28', '2010-10-28');
+insert into Appartient values (237, 'Belgique', 2014, 'Milieu offensif', 19);
+
+insert into Joueur values (238, 'Marouane', 'Fellaini', '1985-05-22', '2005-01-10');
+insert into Appartient values (238, 'Belgique', 2014, 'Milieu offensif', 6);
+
+insert into Joueur values (239, 'Romelu', 'Lukaku', '1993-05-17', '2005-03-26');
+insert into Appartient values (239, 'Belgique', 2014, 'Attaquant', 9);
+
+insert into Joueur values (240, 'Dries', 'Mertens', '1986-01-22', '2006-09-09');
+insert into Appartient values (240, 'Belgique', 2014, 'Attaquant', 14);
+
+insert into Joueur values (241, 'Divock', 'Origi', '1995-09-18', '2005-02-10');
+insert into Appartient values (241, 'Belgique', 2014, 'Attaquant', 17);
+
+
+
+
 --Algerie
+
+
+insert into Joueur values (242, 'Rais', 'M\'Bolhi', '1988-08-31', '1990-05-05');
+insert into Appartient values (242, 'Algerie', 2014, 'Gardien', 23);
+
+insert into Joueur values (243, 'Madjid', 'Bougherra', '1985-12-14', '2003-12-12');
+insert into Appartient values (243, 'Algerie', 2014, 'Defenseur', 2);
+
+insert into Joueur values (244, 'Faouzi', 'Ghoulam', '1986-02-11', '2000-02-10');
+insert into Appartient values (244, 'Algerie', 2014, 'Defenseur', 3);
+
+insert into Joueur values (245, 'Sofiane', 'Feghouli', '1993-02-28', '2010-10-28');
+insert into Appartient values (245, 'Algerie', 2014, 'Milieu offensif', 10);
+
+insert into Joueur values (246, 'Yacine', 'Brahimi', '1985-05-22', '2005-01-10');
+insert into Appartient values (246, 'Algerie', 2014, 'Milieu offensif', 11);
+
+insert into Joueur values (247, 'Nabil', 'Ghilas', '1990-05-17', '2005-03-26');
+insert into Appartient values (247, 'Algerie', 2014, 'Attaquant', 9);
+
+insert into Joueur values (248, 'Islam', 'Slimani', '1986-01-22', '2006-09-09');
+insert into Appartient values (248, 'Algerie', 2014, 'Attaquant', 13);
+
+insert into Joueur values (249, 'El Arabi', 'Soudani', '1986-09-18', '2005-02-10');
+insert into Appartient values (249, 'Algerie', 2014, 'Attaquant', 15);
+
+
+
+--Insert Stade 
+insert into Stade values ('Mineirao', 'Belo Horizonte', 62547),
+	('Estadio Nacional', 'Brasilia', 70064),
+	('Arena Pantanal', 'Cuiaba', 42968),
+	('Arena da Baixada', 'Curitiba', 41456),
+	('Estadio Castelao', 'Fortaleza', 64846),
+	('Arena Amazonia', 'Manaus', 42374),
+	('Arena das Dunas', 'Natal', 62547),
+	('Estadio Beira-Rio', 'Porto Alegre', 48849),
+	('Arena Pernambuco', 'Recife', 44248),
+	('Stade Maracana', 'Rio de Janeiro', 76804),
+	('Arena Fonte Nova', 'Salvador', 48747),
+	('Arena de Sao Paulo', 'Sao Paulo', 62547);
+
+
+--Arbitre 
+insert into Arbitre values (1, 'Felix', 'Brych', '1993-05-17', '2005-03-26'),
+	(2, 'Cuneyt', 'Cakir', '1993-05-17', '2005-03-26'),
+	(3, 'Jonas', 'Eriksson', '1993-05-17', '2005-03-26'),
+	(4, 'Pedro', 'Proenca', '1993-05-17', '2005-03-26'), --------PRINCIPAL
+	(5, 'Stefan', 'Lupp', '1993-05-17', '2005-03-26'),
+	(6, 'Mark', 'Borsch', '1993-05-17', '2005-03-26'),
+	(7, 'Tarik', 'Ongun', '1993-05-17', '2005-03-26'),
+	(8, 'Mathias', 'Clasenius', '1993-05-17', '2005-03-26'),
+	(9, 'Daniel', 'Warnmark', '1993-05-17', '2005-03-26'),
+	(10, 'Bertinio', 'Miranda', '1993-05-17', '2005-03-26'),
+	(11, 'Tiago', 'Trigo', '1993-05-17', '2005-03-26'),
+	(12, 'Renato', 'Faverani', '1993-05-17', '2005-03-26'),
+	(13, 'Andreas', 'Stefani', '1993-05-17', '2005-03-26'),
+	(14, 'Mike', 'Mullarkey', '1993-05-17', '2005-03-26'),
+	(15, 'Darren', 'Cann', '1993-05-17', '2005-03-26'); -------ASSISTANT
+
+
+----MATCH + GERER PAR + SANCTION
+
+insert into Match values ('2014-06-28', 'Bresil', 'Chili', 2014, 'Mineirao', 'Round de 8', 1, 1);
+insert into Gerer_par values ('2014-06-28', 1, 'Principal'),
+	('2014-06-28', 5, 'Assistant'), 
+	('2014-06-28', 6, 'Assistant'),
+	('2014-06-28', 7, 'Assistant');
+insert into Sanction values (1, 110, '2014-06-28', 1, 'Jaune'),
+	(2, 101, '2014-06-28', 1, 'Jaune')
+	(3, 142, '2014-06-28', 5, 'Jaune');
+
+
+insert into Match values ('2014-06-29', 'Colombie', 'Uruguay', 2014, 'Stade Maracana', 'Round de 8', 2, 0);
+insert into Gerer_par values ('2014-06-29', 2, 'Principal'),
+	('2014-06-29', 8, 'Assistant'), 
+	('2014-06-29', 9, 'Assistant'),
+	('2014-06-29', 10, 'Assistant');
+insert into Sanction values (4, 152, '2014-06-29', 2, 'Rouge'),
+	(5, 153, '2014-06-29', 2, 'Jaune')
+	(6, 154, '2014-06-29', 2, 'Jaune');
+
+
+insert into Match values ('2014-06-30', 'Pays-Bas', 'Mexique', 2014, 'Estadio Castelao', 'Round de 8', 2, 1);
+insert into Gerer_par values ('2014-06-30', 3, 'Principal'),
+	('2014-06-30', 11, 'Assistant'), 
+	('2014-06-30', 12, 'Assistant'),
+	('2014-06-30', 13, 'Assistant');
+insert into Sanction values (7, 125, '2014-06-28', 3, 'Jaune'),
+	(8, 125, '2014-06-30', 3, 'Jaune')
+	(9, 125, '2014-06-30', 3, 'Rouge');
+
+
+insert into Match values ('2014-07-01', 'Costa Rica', 'Grece', 2014, 'Arena Pernambuco', 'Round de 8', 1, 1);
+insert into Gerer_par values ('2014-07-01', 4, 'Principal'),
+	('2014-07-01', 14, 'Assistant'), 
+	('2014-07-01', 15, 'Assistant'),
+	('2014-07-01', 1, 'Assistant');
+insert into Sanction values (10, 156, '2014-07-01', 14, 'Jaune'),
+	(11, 157, '2014-07-01', 15, 'Jaune');
+
+
+insert into Match values ('2014-07-02', 'France', 'Nigeria', 2014, 'Estadio Nacional', 'Round de 8', 2, 0);
+insert into Gerer_par values ('2014-07-02', 1, 'Principal'),
+	('2014-07-02', 5, 'Assistant'), 
+	('2014-07-02', 6, 'Assistant'),
+	('2014-07-02', 7, 'Assistant');
+insert into Sanction values (12, 213, '2014-07-02', 1, 'Jaune'),
+	(13, 213, '2014-07-02', 5, 'Rouge');
+
+
+insert into Match values ('2014-07-03', 'Allemagne', 'Algerie', 2014, 'Estadio Beira-Rio', 'Round de 8', 2, 1);
+insert into Gerer_par values ('2014-07-03', 2, 'Principal'),
+	('2014-07-03', 8, 'Assistant'), 
+	('2014-07-03', 9, 'Assistant'),
+	('2014-07-03', 10, 'Assistant');
+insert into Sanction values (14, 221, '2014-07-03', 2, 'Jaune'),
+	(15, 247, '2014-07-03', 2, 'Jaune');
+
+
+insert into Match values ('2014-07-04', 'Argentine', 'Suisse', 2014, 'Arena de Sao Paulo', 'Round de 8', 1, 0);
+insert into Gerer_par values ('2014-07-04', 2, 'Principal'),
+	('2014-07-04', 10, 'Assistant'), 
+	('2014-07-04', 3, 'Assistant'),
+	('2014-07-04', 5, 'Assistant');
+insert into Sanction values (16, 208, '2014-07-04', 2, 'Jaune'),
+	(17, 189, '2014-07-04', 2, 'Jaune');
+
+
+insert into Match values ('2014-07-05', 'Belgique', 'Etats-Unis', 2014, 'Arena Fonte Nova', 'Round de 8', 2, 1);
+insert into Gerer_par values ('2014-07-05', 3, 'Principal'),
+	('2014-07-05', 11, 'Assistant'), 
+	('2014-07-05', 12, 'Assistant'),
+	('2014-07-05', 13, 'Assistant');
+insert into Sanction values (18, 232, '2014-07-05', 3, 'Jaune'),
+	(19, 232, '2014-07-05', 13, 'Rouge');
+
+
+insert into Match values ('2014-07-06', 'France', 'Allemagne', 2014, 'Stade Maracana', 'Quart de finale', 0, 1);
+insert into Gerer_par values ('2014-07-06', 1, 'Principal'),
+	('2014-07-06', 5, 'Assistant'), 
+	('2014-07-06', 6, 'Assistant'),
+	('2014-07-06', 7, 'Assistant');
+
+
+insert into Match values ('2014-07-07', 'Bresil', 'Colombie', 2014, 'Estadio Castelao', 'Quart de finale', 2, 1);
+insert into Gerer_par values ('2014-07-07', 2, 'Principal'),
+	('2014-07-07', 8, 'Assistant'), 
+	('2014-07-07', 9, 'Assistant'),
+	('2014-07-07', 10, 'Assistant');
+
+
+insert into Match values ('2014-07-08', 'Argentine', 'Belgique', 2014, 'Arena Fonte Nova', 'Quart de finale', 1, 0);
+insert into Gerer_par values ('2014-07-08', 3, 'Principal'),
+	('2014-07-08', 11, 'Assistant'), 
+	('2014-07-08', 12, 'Assistant'),
+	('2014-07-08', 13, 'Assistant');
+
+insert into Match values ('2014-07-09', 'Pays-Bas', 'Costa Rica', 2014, 'Estadio Nacional', 'Quart de finale', 0, 0);
+insert into Gerer_par values ('2014-07-09', 1, 'Principal'),
+	('2014-07-09', 14, 'Assistant'), 
+	('2014-07-09', 15, 'Assistant'),
+	('2014-07-09', 5, 'Assistant');
+
+
+insert into Match values ('2014-07-10', 'Bresil', 'Allemagne', 2014, 'Estadio Mineirao', 'Demi-finale', 1, 7);
+insert into Gerer_par values ('2014-07-10', 1, 'Principal'),
+	('2014-07-10', 5, 'Assistant'), 
+	('2014-07-10', 6, 'Assistant'),
+	('2014-07-10', 7, 'Assistant');
+
+
+
+insert into Match values ('2014-07-11', 'Pays-Bas', 'Argentine', 2014, 'Arena Baixada', 'Demi-finale', 0, 0);
+insert into Gerer_par values ('2014-07-11', 2, 'Principal'),
+	('2014-07-11', 8, 'Assistant'), 
+	('2014-07-11', 9, 'Assistant'),
+	('2014-07-11', 10, 'Assistant');
+
+
+
+insert into Match values ('2014-07-13', 'Allemagne', 'Argentine', 2014, 'Stade Maracana', 'Finale', 1, 0);
+insert into Gerer_par values ('2014-07-13', 1, 'Principal'),
+	('2014-07-13', 11, 'Assistant'), 
+	('2014-07-13', 12, 'Assistant'),
+	('2014-07-13', 13, 'Assistant');
+insert into Sanction values (20, 221, '2014-07-13', 1, 'Jaune'),
+    (21, 222, '2014-07-13', 1, 'Jaune'),
+    (22, 223, '2014-07-13', 1, 'Jaune'),
+    (23, 225, '2014-07-13', 1, 'Rouge'),
+	(24, 204, '2014-07-13', 1, 'Jaune'),
+	(25, 205, '2014-07-13', 13, 'Rouge'),
+	(26, 206, '2014-07-13', 13, 'Jaune'),
+	(27, 208, '2014-07-13', 13, 'Jaune'),
+	(28, 202, '2014-07-13', 11, 'Rouge');
+
+
