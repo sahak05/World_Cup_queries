@@ -1,0 +1,14 @@
+set search_path to Projet3;
+
+With r1 as (select * from Joueur where 
+ ( date_de_naissance BETWEEN '1985-01-01' AND '1995-01-01' )
+	Order by date_de_naissance ),
+	r2 as (select * from Appartient where (numero between 10 and 19) and position != 'Attaquant' AND edition=2014),
+r3 as (select * FROM r1 NATURAL JOIN r2),
+r4 as (select * from r3 NATURAL JOIN Sanction WHERE couleur= 'Jaune')
+
+select nom, prenom, nation from r4 
+GROUP BY nom,prenom,nation
+HAVING Count(couleur) >=2 ;  
+
+

@@ -1,0 +1,20 @@
+set search_path to Projet3;
+
+with r1 as (select * from  Match   where rang='Finale'),
+arbitre1 as (select nom_a,prenom_a,arbitre_id from Arbitre),
+sanction1 as (select sanction_id, arbitre_id from Sanction),
+r2 as (select * from arbitre1 natural join sanction1 ),
+r3 as (	select * from r1 NATURAL JOIN Gerer_par ),
+r4 as (select nom_a,prenom_a, count(sanction_id) as nombre_sanctions_donnee  from r3 natural join r2
+	 GROUP BY  nom_a,prenom_a )
+	 
+select * from r4 where
+nombre_sanctions_donnee >= all (select nombre_sanctions_donnee from r4);
+
+--r3 as (
+	--select nom_a,prenom_a,edition, count(couleur) as nombreSanctions  from r2 NATURAL JOIN Sanction WHERE
+	--Sanction.arbitre_id= arbitre_id
+	--GROUP BY  nom_a,prenom_a,edition
+	--)
+	--select  * from r3 
+	--MAX(nombresanctions);
