@@ -1,0 +1,16 @@
+set search_path to Projet3;
+
+With rjoueur as (select * from Joueur where nom ='Messi' AND prenom='Lionel'),
+  joueur_1 as(select joueur_id from rjoueur),
+  rEdition as (select * from Appartient where edition in (2014,2018)),
+  appartient_1 as (select joueur_id, nation from rEdition),
+  stade_1 as (select nom_stade, ville from Stade),
+  match_1 as (select nation1, nation2, edition,nom_stade from Match),
+  r1 as (select * from joueur_1 natural join appartient_1),
+r2 as (select * from r1 natural join match_1 where nation=nation1),
+  r3 as (select * from r1 natural join match_1 where nation=nation2),
+  r4 as (select * from r2 union select * from r3),
+  r5 as (select  nom_stade, ville from r4 natural join stade_1)
+  select * from r5;
+  
+  
