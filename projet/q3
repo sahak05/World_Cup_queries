@@ -1,0 +1,9 @@
+set search_path to Projet3;
+
+with r1 as(select collaborateur_id, nom_C, prenom_C, expertise from Collaborateur),
+r2 as(select nation1,nation2, edition from Match where edition=2018 AND rang='Finale'),
+r3 as (select * from r1 natural join Collabore),
+r4 as (select * from r2 natural join r3),
+r5 as (select * from r4 natural join r2 where nation= nation1),
+r6 as (select nation,nom_C, prenom_C, expertise  from r5 UNION (select nation, nom_C, prenom_C, expertise  from r4 natural join r2 where nation= nation2))
+select * from r6;
