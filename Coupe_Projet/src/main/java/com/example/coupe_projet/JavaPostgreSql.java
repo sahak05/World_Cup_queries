@@ -95,7 +95,7 @@ public class JavaPostgreSql {
                 }
 
             }
-
+            System.out.println(result);
 
             resultSet.close();
             preparedStatement.close();

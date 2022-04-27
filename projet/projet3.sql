@@ -1498,4 +1498,57 @@ insert into Collabore values
             ('Angleterre', 2018, 35);
 
 
+
+
+
+
+with r1 as (select * from  Match   where rang='Finale'),
+arbitre1 as (select nom_a,prenom_a,arbitre_id from Arbitre),
+sanction1 as (select sanction_id, arbitre_id, dateM from Sanction),
+r2 as (select * from r1 natural join Gerer_par ),
+r3 as (	select * from r2 NATURAL JOIN sanction1 ),
+r4 as (	select * from r3 NATURAL JOIN arbitre1 ),
+r5 as (select nom_a,prenom_a, count(sanction_id) as nombre_sanctions from r4 
+	 GROUP BY  nom_a,prenom_a )
+
+select* from r5  where
+nombre_sanctions >= all (select nombre_sanctions from r5);
+
+
+
+With rjoueur as (select * from Joueur where nom ='Messi' AND prenom='Lionel'),
+  joueur_1 as(select joueur_id from rjoueur),
+  rEdition as (select * from Appartient where edition in (2014,2018)),
+  appartient_1 as (select joueur_id, nation from rEdition),
+  stade_1 as (select nom_stade, ville from Stade),
+  match_1 as (select nation1, nation2, edition,nom_stade from Match),
+  r1 as (select * from joueur_1 natural join appartient_1),
+r2 as (select * from r1 natural join match_1 where nation=nation1),
+  r3 as (select * from r1 natural join match_1 where nation=nation2),
+  r4 as (select * from r2 union select * from r3),
+  r5 as (select  nom_stade, ville from r4 natural join stade_1)
+  select * from r5;
+
+
+with r1 as(select collaborateur_id, nom_C, prenom_C, expertise from Collaborateur),
+r2 as(select nation1,nation2, edition from Match where edition=2018 AND rang='Finale'),
+r3 as (select * from r1 natural join Collabore),
+r4 as (select * from r2 natural join r3),
+r5 as (select * from r4 natural join r2 where nation= nation1),
+r6 as (select nation,nom_C, prenom_C, expertise  from r5 UNION (select nation, nom_C, prenom_C, expertise  from r4 natural join r2 where nation= nation2))
+select * from r6;
+
+
+With r1 as (select * from Joueur where 
+ ( date_de_naissance BETWEEN '1985-01-01' AND '1995-01-01' )
+	Order by date_de_naissance ),
+	r2 as (select * from Appartient where (numero between 10 and 19) and position != 'Attaquant' AND edition=2014),
+r3 as (select * FROM r1 NATURAL JOIN r2),
+r4 as (select * from r3 NATURAL JOIN Sanction WHERE couleur= 'Jaune')
+
+select nom, prenom, nation from r4 
+GROUP BY nom,prenom,nation
+HAVING Count(couleur) >=2 ;  
+
+
 	COMMIT;
