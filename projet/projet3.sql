@@ -1,3 +1,8 @@
+--url = "jdbc:postgresql://localhost:5432/Projet3";
+-- user = "postgres";
+--password = "A0j5a0o5";
+
+
 BEGIN TRANSACTION;
 drop schema if exists Projet3 cascade;
 
