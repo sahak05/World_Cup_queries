@@ -33,17 +33,20 @@ public class CoupeDuMonde {
     public void showQuestion1(ActionEvent event) throws IOException {
     questionL.setText("Donnez le nom et prénom de l’arbitre qui a donné le plus\n " +
             "de sanctions pendant les matchs de finale.");
+        reponseL.setText(JavaPostgreSql.fetchToDatabse(1));
     }
 
     //Afficher la question et la reponse 2
     public void showQuestion2(ActionEvent event) throws IOException {
         questionL.setText("Donnez le nom et la ville des stades dans lesquels \n a joué le joueur " +
                 "Lionel Messi aux éditions 2014 et 2018.");
+        reponseL.setText(JavaPostgreSql.fetchToDatabse(2));
     }
 
     //Afficher la question et la reponse 3
     public void showQuestion3(ActionEvent event) throws IOException {
-        questionL.setText("Nom, prénom et expertise des collaborateurs \n des équipes en finale de l’édition 2018.");
+        questionL.setText("Nation, Nom, prénom et expertise des collaborateurs \n des équipes en finale de l’édition 2018.");
+        reponseL.setText(JavaPostgreSql.fetchToDatabse(3));
     }
 
     //Afficher la question et la reponse 4
@@ -52,6 +55,8 @@ public class CoupeDuMonde {
                 "née entre 1985 et 1995\n portant un  numero  supérieur ou  égale \n à 10" +
                 " et inferieur a 20 et n’étant  pas attaquant \n et qui  ont reçue au moins " +
                 "deux sanctions \n jaune a l'édition 2014.");
+
+        reponseL.setText(JavaPostgreSql.fetchToDatabse(4));
     }
 
 }
